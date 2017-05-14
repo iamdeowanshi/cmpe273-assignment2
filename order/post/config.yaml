@@ -1,0 +1,29 @@
+region: us-west-2
+
+function_name: order_post
+handler: service.handler
+role: service-role/owner
+description: To create an order
+
+# if access key and secret are left blank, boto will use the credentials
+# defined in the [default] section of ~/.aws/credentials.
+aws_access_key_id: 
+aws_secret_access_key:
+
+
+# dist_directory: dist
+# timeout: 15
+# memory_size: 512
+    # e = event.get('e')
+    # pi = event.get('pi')
+    # return {
+    #     "statusCode": 200,    # e = event.get('e')
+    # pi = event.get('pi')
+    # return {
+    #     "statusCode": 200,
+    #     "headers": { "Content-Type": "application/json"},
+    #     "body": e + pi
+    # } 
+    #     "headers": { "Content-Type": "application/json"},
+    #     "body": e + pi
+    # }q1 
